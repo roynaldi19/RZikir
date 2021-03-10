@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RZikir</string>
+    <string name="L_istighfar">Istiqhfar</string>
+    <string name="A_istiqhfar">(أستغفر الله‎</string>
+    <string name="L_tasbih">Tasbih</string>
+    <string name="A_tasbih">سُبْحَانَ اللّهُ</string>
+    <string name="L_tahmid">Tahmid</string>
+    <string name="A_tahmid">ٱلْحَمْدُ لِلَّٰهِ</string>
+    <string name="L_takbir">Takbir</string>
+    <string name="A_takbir">ٱللَّٰهُ أَكْبَرُِ</string>
+    <string name="L_tahlil">Tahlil</string>
+    <string name="A_tahlil">لا إله إلا الله</string>
+</resources>
