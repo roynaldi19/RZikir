@@ -10,4 +10,5 @@
     <string name="A_takbir">ٱللَّٰهُ أَكْبَرُِ</string>
     <string name="L_tahlil">Tahlil</string>
     <string name="A_tahlil">لا إله إلا الله</string>
+    <string name="start">0</string>
 </resources>

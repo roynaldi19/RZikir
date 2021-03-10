@@ -10,7 +10,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -23,7 +24,8 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
-            card_view:cardCornerRadius="4dp">
+            card_view:cardCornerRadius="4dp"
+            tools:ignore="NestedWeights">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -106,8 +108,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -120,7 +123,8 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
-            card_view:cardCornerRadius="4dp">
+            card_view:cardCornerRadius="4dp"
+            tools:ignore="NestedWeights">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -156,7 +160,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_tasbih"
+            android:id="@+id/cv_takbir"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -181,7 +185,7 @@
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    tools:text="@string/A_tasbih" />
+                    tools:text="@string/A_takbir" />
 
                 <View
                     android:layout_width="match_parent"
@@ -194,7 +198,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="8dp"
-                    tools:text="@string/L_tasbih" />
+                    tools:text="@string/L_takbir" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -202,14 +206,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/view_child1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_istigfar"
+            android:id="@+id/cv_tahlil"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -217,7 +221,8 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
-            card_view:cardCornerRadius="4dp">
+            card_view:cardCornerRadius="4dp"
+            tools:ignore="NestedWeights">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -234,7 +239,7 @@
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    tools:text="@string/A_istiqhfar" />
+                    tools:text="@string/A_tahlil" />
 
                 <View
                     android:layout_width="match_parent"
@@ -247,151 +252,32 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="8dp"
-                    tools:text="@string/L_istighfar" />
+                    tools:text="@string/L_tahlil" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cv_tasbih"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="4dp"
-            android:layout_weight="1"
-            card_view:cardCornerRadius="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    tools:text="@string/A_tasbih" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    tools:text="@string/L_tasbih" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/view_child1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cv_istigfar"
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="4dp"
-            android:layout_weight="1"
-            card_view:cardCornerRadius="4dp">
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            tools:text="@string/start" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    tools:text="@string/A_istiqhfar" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    tools:text="@string/L_istighfar" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cv_tasbih"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="4dp"
-            android:layout_weight="1"
-            card_view:cardCornerRadius="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    tools:text="@string/A_tasbih" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    tools:text="@string/L_tasbih" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
