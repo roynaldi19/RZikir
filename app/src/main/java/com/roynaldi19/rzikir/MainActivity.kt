@@ -1,18 +1,26 @@
 package com.roynaldi19.rzikir
 
-import androidx.appcompat.app.AppCompatActivity
+import android.media.MediaPlayer
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import com.roynaldi19.rzikir.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), View.OnClickListener{
+class MainActivity : AppCompatActivity() {
 
-    TextCount
+    private lateinit var binding: ActivityMainBinding
+
+    private var mediaPlayer: MediaPlayer? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+
     }
 
-    override fun onClick(v: View?) {
-        TODO("Not yet implemented")
-    }
 }
+
+
