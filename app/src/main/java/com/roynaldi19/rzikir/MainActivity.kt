@@ -18,8 +18,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.btnIstigfar.setOnClickListener {
+            mediaPlayer.
+        }
 
     }
+
 
 }
 
