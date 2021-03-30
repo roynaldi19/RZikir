@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
 
     private var mediaPlayer: MediaPlayer? = null
 
+    var count = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +21,10 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.btnIstigfar.setOnClickListener {
-            mediaPlayer.
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.takbir);
+            mediaPlayer?.start();
+            count++
+
         }
 
     }
