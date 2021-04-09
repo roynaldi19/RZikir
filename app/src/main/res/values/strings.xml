@@ -11,5 +11,7 @@
     <string name="L_tahlil">Tahlil</string>
     <string name="A_tahlil">لا إله إلا الله</string>
     <string name="reset">Reset</string>
+    <string name="profil">Profil</string>
     <string name="penghitung_zikir">Penghitung Zikir</string>
+    <string name="ini_profil_roynaldi">ini profil RoynaLDI</string>
 </resources>

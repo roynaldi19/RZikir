@@ -1,5 +1,6 @@
 package com.roynaldi19.rzikir
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.Menu
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var mediaPlayer: MediaPlayer? = null
 
     var count = 0
+    private lateinit var tvCount: TextView
 
 
 
@@ -24,14 +26,47 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
-
         binding.btnIstigfar.setOnClickListener {
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.takbir);
             mediaPlayer?.start();
             count++
+            binding.tvCount.setText(count.toString())
 
-            binding.tvCount.setText("makan lah")
+
+        }
+
+        binding.btnTakbir.setOnClickListener {
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.takbir);
+            mediaPlayer?.start();
+            count++
+            binding.tvCount.setText(count.toString())
+
+
+        }
+
+        binding.btnTahlil.setOnClickListener {
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.takbir);
+            mediaPlayer?.start();
+            count++
+            binding.tvCount.setText(count.toString())
+
+
+        }
+
+        binding.btnTahmid.setOnClickListener {
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.takbir);
+            mediaPlayer?.start();
+            count++
+            binding.tvCount.setText(count.toString())
+
+
+        }
+
+        binding.btnTasbih.setOnClickListener {
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.takbir);
+            mediaPlayer?.start();
+            count++
+            binding.tvCount.setText(count.toString())
 
 
         }
@@ -52,7 +87,8 @@ class MainActivity : AppCompatActivity() {
         when (selectedMode) {
             R.id.action_reset -> {
                 mediaPlayer?.stop()
-                count = 0;
+                count = 0
+                binding.tvCount.setText(count.toString())
 
             }
         }
