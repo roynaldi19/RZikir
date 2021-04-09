@@ -1,6 +1,5 @@
 package com.roynaldi19.rzikir
 
-import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.Menu
@@ -16,8 +15,6 @@ class MainActivity : AppCompatActivity() {
     private var mediaPlayer: MediaPlayer? = null
 
     var count = 0
-    private lateinit var tvCount: TextView
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -93,7 +90,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
 
 
 }
